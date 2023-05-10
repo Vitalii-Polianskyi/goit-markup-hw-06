@@ -492,7 +492,7 @@ a.nav-link {
 }
 .text-footer-color {
   color: var(--back-color-section);
-  max-width: 264px;
+  width: 264px;
   line-height: 1.5;
 }
 .footer-container {
@@ -550,7 +550,7 @@ a.nav-link {
   background-color: var(--green-color-socail);
 }
 .footer-items-center {
-  margin-right: 192px;
+  margin-right: 152px;
 }
 .footer-Subscribe {
 }
@@ -584,11 +584,8 @@ a.nav-link {
   line-height: 24px;
   letter-spacing: 0.04em;
 
-  outline-offset: -2px;
-  outline-color: var(--primary-color);
-
   border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
   border-radius: 4px;
 }
 .footer-right-input::placeholder {
@@ -596,7 +593,8 @@ a.nav-link {
 }
 .footer-right-input:focus,
 .footer-right-input:hover {
-  outline-color: var(--primary-color);
+  border-color: var(--pressed-color);
+  outline: none;
 }
 .footer-right-btn {
   display: flex;
@@ -824,28 +822,29 @@ a.nav-link {
   position: relative;
 }
 .modal-form-input {
-  /* border: 1px solid rgba(46, 47, 66, 0.4); */
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
   display: inline-block;
   width: 360px;
   height: 40px;
-  outline-offset: -2px;
+
+  outline: nane;
   padding-left: 38px;
-  outline-color: #4d5ae5;
-  /* display: block; */
 
   margin-bottom: 8px;
   display: inline-block;
 
-  transition-property: outline-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus,
 .modal-form-input:hover {
-  outline-color: #4d5ae5;
+  border-color: #4d5ae5;
   border-radius: 4px;
+  outline: none;
 }
 .modal-form-icon {
   position: absolute;
@@ -871,15 +870,16 @@ a.nav-link {
   border-radius: 4px;
   resize: none;
 
-  transition-property: color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-text:focus,
 .modal-form-text:hover {
-  outline-color: #4d5ae5;
+  border-color: #4d5ae5;
   border-radius: 4px;
+  outline: none;
 }
 .modal-form-text::placeholder {
   font-style: normal;
