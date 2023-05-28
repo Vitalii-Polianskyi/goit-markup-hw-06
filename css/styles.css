@@ -550,7 +550,7 @@ a.nav-link {
   background-color: var(--green-color-socail);
 }
 .footer-items-center {
-  margin-right: 152px;
+  margin-right: 80px;
 }
 .footer-Subscribe {
 }
@@ -737,8 +737,11 @@ a.nav-link {
   transform: translate(-50%, -50%) scale(1) rotate(0);
   /* opacity: 1; */
   visibility: visible;
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
 
-  padding: 24px;
   width: 408px;
   min-height: 584px;
   cursor: pointer;
@@ -791,7 +794,7 @@ a.nav-link {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 72px;
+
   margin-bottom: 16px;
 
   font-style: normal;
@@ -820,38 +823,38 @@ a.nav-link {
 }
 .modal-form-field {
   position: relative;
+  margin-bottom: 8px;
 }
 .modal-form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
-  display: inline-block;
+  /* display: inline-block; */
   width: 360px;
   height: 40px;
 
-  outline: nane;
+  outline: 1px solid transparent;
   padding-left: 38px;
 
-  margin-bottom: 8px;
-  display: inline-block;
-
-  transition-property: border-color;
+  transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus,
 .modal-form-input:hover {
-  border-color: #4d5ae5;
-  border-radius: 4px;
-  outline: none;
+  outline-color: #4d5ae5;
+  border: transparent;
 }
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 19px;
   transform: translateY(-50%);
-  margin-left: 16px;
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -868,18 +871,18 @@ a.nav-link {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: 1px solid transparent;
   resize: none;
 
-  transition-property: border-color;
+  transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-text:focus,
 .modal-form-text:hover {
-  border-color: #4d5ae5;
-  border-radius: 4px;
-  outline: none;
+  outline-color: #4d5ae5;
+  border: transparent;
 }
 .modal-form-text::placeholder {
   font-style: normal;
